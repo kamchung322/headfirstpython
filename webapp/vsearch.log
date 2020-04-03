@@ -1,0 +1,3 @@
+ImmutableMultiDict([('phrase', 'Today is a nice day'), ('letters', 'nice')])|127.0.0.1|Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:74.0) Gecko/20100101 Firefox/74.0|{'n', 'c', 'e', 'i'}
+ImmutableMultiDict([('phrase', 'Python and Flask is aweful'), ('letters', 'aeiou')])|127.0.0.1|Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:74.0) Gecko/20100101 Firefox/74.0|{'e', 'i', 'o', 'a', 'u'}
+ImmutableMultiDict([('phrase', 'they make web app easy'), ('letters', 'aeiou')])|127.0.0.1|Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:74.0) Gecko/20100101 Firefox/74.0|{'a', 'e'}
