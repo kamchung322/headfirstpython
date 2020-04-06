@@ -12,9 +12,9 @@ Study note for Head First Python
     list[1,2,3]
 
 ### Chapter 3 : Working with Structured Data (P95)
-    dict {key:value,key:value}
-    set {value, value, value}
-    tuple (value, value, value)
+    dict {key:value,key:value} : Key / Value
+    set {value, value, value} : No Duplicate
+    tuple (value, value, value) : READ ONLY
 
 ### Chapter 4 : Functions and Modules (P145)
     BIF : Build-in Function
@@ -61,16 +61,83 @@ Study note for Head First Python
     Create custom error message.  see DBcm.py
 
 ### Chapter 11 1/3 : A Little Bit of Threading - Dealing with Waiting (P461)
-    
+    Ch11Thread.py
+
+    from threading import Thread
+    t = Thread(target=func_name, args(arg1, arg2))
+    t.start()
 
 ### Chapter 12 : Advanced Iteration - Looping like Crazy (P477)
+    string.strip() : remove begin/end whitespace
+
+#### Comprehension
+    replace for loop 
+    1.  faster
+    2.  can place in for loop cannot place
+#####    Normal loop
+    dests = []
+    for dest in flights.values():
+        dests.append(dest.title())
+#####    Comprehension
+    dest2 = [dest.title() for dest in flights.values()]
+
+    listcomp = ['value' 'for loop' 'if filter' ]
+    listcomp, dictcomp, setcomp but no tuplecomp
+
+#### Generator
+    Use () as generator instead of []
+    Performance is better.
+    return result once available and one by one.
+    use yield instead of return in generator function.
 
 ### A : Installing - Installing Python (P521)
 
 ### B : Pythonanywhere - Deploying Your Webapp (P529)
 
 ### C : Top Ten Things We Didn't Cover - There's Always More to Learn (P539)
+2.  Virtual Programming Enviroments
+3.  More on Object Orientation
+5.  Getting Things Sorted
+6.  More from the Standard Library
+    collections.
+        OrderedDict, Counter, ChainMap
+    itertools
+    functools
+7.  Running Your Code Concurrently
+        multiprocessing, asyncio, concurrent.futures
+        New Keywords: async and await
+8.  GUIs with Tkinter (and Fun with Turtle)
+9.  Automated testing
+        doctest, unittest
+10. Debug, Debug, Debug
+        Python's debugger : pdb
 
 ### D : Top Ten Projects Not Covered - Even More Tools, Libraries, and Modules (P551)
+3.  Jupyter Notebook : The web-based IDE
+4.  Doing Data Science
+        Best place for data science is the PyData : pydata.org
+        bokeh: A set of technologies for publishing interactive graphics on web pages.
+        matplotlib/seaborn:  A comprehensive set of graphing modules (which integrates with ipython and jupyter notebook)
+        numpy: Store and manipulate multidimensional data(Matrices).
+        scipy: A set of scientific modules optimized for numerical data analysis, which complements and expands upon what's provided by numpy.
+        pandas: provides optimized analysis data structures and tools (built on top of numpy and matplotlib).  pandas is another killer Python application.
+        scikit-learn: A set of machine learning alogrithms and technologies implemented in Python.
+5.  Web Development Technologies
+        Flask, Django
+
+6.  Working with Web Data
+        requests, Beautiful Soup, Scrapy
+
+7.  More Data Sources
+        sqlalchemy: the database toolkit for Python
+        www.sqlalchemy.org
+
+8.  Programming Tools
+        Pylint, Python's code analysis tool:
+
+9.  Kivy
+    A Python library for develop multitouch interfaces.
+
+10. Python Cookbook : OReilly
 
 ### E : Getting Involved - The Python Community (P563)
